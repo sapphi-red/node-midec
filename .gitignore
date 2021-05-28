@@ -1,0 +1,3 @@
+lib/main.wasm
+lib/wasm_exec.js
+.vscode/settings.json
