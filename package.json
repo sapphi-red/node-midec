@@ -1,0 +1,27 @@
+{
+  "name": "node-midec",
+  "version": "0.1.0",
+  "description": "Multi-image detector (Wasm). cf. Animated GIF, APNG, Animated WebP, Animated HEIF/AVIF.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphi-red/node-midec.git"
+  },
+  "keywords": [
+    "gif",
+    "apng",
+    "png",
+    "webp",
+    "heif",
+    "avif"
+  ],
+  "author": "sapphi-red <green@sapphi.red> (https://github.com/sapphi-red)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sapphi-red/node-midec/issues"
+  },
+  "homepage": "https://github.com/sapphi-red/node-midec#readme"
+}
