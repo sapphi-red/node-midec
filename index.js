@@ -1,1 +1,1 @@
-require('./lib/main')
+import './lib/main.mjs'
