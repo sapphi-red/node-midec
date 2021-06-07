@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/sapphi-red/node-midec/issues"
   },
-  "homepage": "https://github.com/sapphi-red/node-midec#readme"
+  "homepage": "https://github.com/sapphi-red/node-midec#readme",
+  "engines": {
+    "node": ">= 14.8.0"
+  }
 }
