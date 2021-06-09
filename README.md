@@ -18,3 +18,9 @@ const file = await fs.readFile(filePath)
 const result = await isAnimated(file)
 console.log(`animated.gif is ${result ? '' : 'not '}an animated image.`)
 ```
+
+## Build
+```shell
+$ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./lib
+$ GOOS=js GOARCH=wasm go build -o lib/main.wasm
+```
