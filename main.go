@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var shutdownCh = make(chan struct{}, 0)
+	var shutdownCh = make(chan struct{})
 
 	src.Setup()
 
