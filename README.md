@@ -1,4 +1,4 @@
-# node-midec
+# node-midec [![npm version](https://badge.fury.io/js/node-midec.svg)](https://badge.fury.io/js/node-midec) [![main (Go)](https://github.com/sapphi-red/node-midec/actions/workflows/main_go.yaml/badge.svg)](https://github.com/sapphi-red/node-midec/actions/workflows/main_go.yaml) [![automatic publish](https://github.com/sapphi-red/node-midec/actions/workflows/release.yaml/badge.svg)](https://github.com/sapphi-red/node-midec/actions/workflows/release.yaml)
 Multi-image detector (Wasm). cf. Animated GIF, APNG, Animated WebP, Animated HEIF/AVIF.
 
 Pure Webassembly + JavaScript port of [midec](https://github.com/sapphi-red/midec).
