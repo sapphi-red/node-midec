@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Multi-image detector (Wasm). cf. Animated GIF, APNG, Animated WebP, Animated HEIF/AVIF.",
   "main": "index.mjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
