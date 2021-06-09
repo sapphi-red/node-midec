@@ -1,6 +1,6 @@
 {
   "name": "node-midec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-image detector (Wasm). cf. Animated GIF, APNG, Animated WebP, Animated HEIF/AVIF.",
   "main": "index.mjs",
   "types": "index.d.ts",
