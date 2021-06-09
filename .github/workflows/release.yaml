@@ -1,0 +1,28 @@
+name: automatic publish
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - uses: actions/setup-go@v2
+        with:
+          go-version: 1.16
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: npm ci
+        run: npm ci
+      - name: copy wasm_exec.js
+        run: cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./lib
+      - name: build wasm
+        run: GOOS=js GOARCH=wasm go build -o lib/main.wasm
+      - name: release
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
