@@ -9,6 +9,8 @@ import (
 func main() {
 	var shutdownCh = make(chan struct{})
 
+	d := 3
+
 	src.Setup()
 
 	<-shutdownCh
