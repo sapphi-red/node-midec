@@ -21,7 +21,10 @@ jobs:
       - name: copy wasm_exec.js
         run: cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./lib
       - name: build wasm
-        run: GOOS=js GOARCH=wasm go build -o lib/main.wasm
+        run: go build -o lib/main.wasm
+        env:
+          GOOS: js
+          GOARCH: wasm
       - name: release
         run: npm publish --access public
         env:
