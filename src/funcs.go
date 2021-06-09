@@ -1,3 +1,5 @@
+// +build wasm,js
+
 package src
 
 import (
